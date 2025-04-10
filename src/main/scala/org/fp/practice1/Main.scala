@@ -30,9 +30,10 @@ object Main extends IOApp.Simple {
     createTransactor.use { xa =>
       val userRepo = new DoobieUserRepository(xa)
       val multipleUsers = List(
-        User(2L, "Koti", "koti@example.com"),
-        User(3L, "Vinay", "vinay@example.com"),
-        User(4L, "Mahesh", "mahesh@example.com")
+        User(1L, "Manoj", "manoj@gmail.com"),
+        User(2L, "Koti", "koti@gmail.com"),
+        User(3L, "Vinay", "vinay@gmail.com"),
+        User(4L, "Mahesh", "mahesh@gmail.com")
       )
 
       for {
